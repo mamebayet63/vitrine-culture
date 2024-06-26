@@ -2,306 +2,328 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vitrine culture</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
-    <style>
-        body {
-            font-family: "Montserrat", sans-serif;
-            font-optical-sizing: auto;
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PCA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="header.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.min.css">
+  <style>
+    body {
+      font-family: Montserrat;
+    }
 
-        }
+    .monImage {
+      width: 100%;
+      height: 80%;
+    }
 
-        .monCouleur {
-            background-color: #EC681C;
-        }
+    .bagImage {
+      background-image: url(image/Group\ 26.svg);
+    }
 
-        .bag {
-            background-color: #013A40;
-        }
+    .orange {
+      color: #EC681C;
+    }
 
-        .orange {
-            color: #EC681C;
-        }
+    .bg-orange {
+      background-color: #EC681C;
+    }
 
-        .monImage {
-            width: 100%;
-            height: 90%;
-        }
+    .monButton {
+      border: none;
+      border-radius: 10px;
+      width: 100%;
+      height: 40px;
+      cursor: pointer;
+    }
+    
+  </style>
+  <style>
+    body {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
 
-        .monImage2 {
-            width: 100%;
-            height: 100%;
-        }
+    }
 
-        .vert {
-            color: #013A40;
-        }
+    .monCouleur {
+        background-color: #EC681C;
+    }
 
-        .hauteur {
-            height: 90%;
-            width: 100%;
-        }
+    .bag {
+        background-color: #013A40;
+    }
 
-        .box {
-            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    .orange {
+        color: #EC681C;
+    }
+
+    .monImage {
+        width: 100%;
+        height: 90%;
+    }
+
+    .monImage2 {
+        width: 100%;
+        height: 100%;
+    }
+
+    .vert {
+        color: #013A40;
+    }
+
+    .hauteur {
+        height: 90%;
+        width: 100%;
+    }
+
+    .box {
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    }
+    .monLogo {
+          width: 40px;
+          height: 40px;
+          border-radius: 100%;
+          margin-left: 20px;
         }
-        .monLogo {
-              width: 40px;
-              height: 40px;
-              border-radius: 100%;
-              margin-left: 20px;
-            }
-    </style>
+        hr {
+    border: 0;
+    height: 3px;
+    background-color: white; /* Change to your desired color */
+}
+</style>
 </head>
 
 <body>
-    <div class="container-fluid vstack gap-4">
-        <header>
-            <div class="container">
-                <nav class="navbar  " data-bs-theme="dark">
-                    <!-- Navbar content -->
-                    <div class="container-fluid b">
-                        <nav
-                            class="navbar navbar-expand-lg monCouleur rounded-pill w-100 d-flex justify-content-between">
-                            <div class="container-fluid">
-                                <div class="col-3">
-                                <a class="navbar-brand" href="index.html">  
-                                        <img src="image/logo.jpg" class="monLogo" alt="">
-                                </a>
-                            </div>
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="collapse navbar-collapse  " id="navbarText">
-                                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                                        <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Événements</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="difusion.html">Diffusion</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="contact.html">Contact</a>
-                                        </li>
-                                        
-                                    </ul>
+  
+  <div class="container-fluid vstack gap-2">
+   <div class="row">
+    <header class="position-sticky">
+        <div class="container-fluid ">
+            <nav class="navbar  " data-bs-theme="dark">
+                <!-- Navbar content -->
+                <div class="container-fluid ">
+                    <nav
+                        class="navbar navbar-expand-lg monCouleur rounded-pill w-100 d-flex justify-content-between">
+                        <div class="container-fluid">
+                            <div class="col-3">
+                            <a class="navbar-brand" href="index.html">  
+                                    <img src="image/logo.jpg" class="monLogo" alt="">
+                            </a>
+                        </div>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse  " id="navbarText">
+                                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="evenment.html">Événements</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="difusion.html">Diffusion</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Contact</a>
+                                    </li>
+                                    
+                                </ul>
 
-                                </div>
-                                <div class="collapse  navbar-collapse  " id="navbarText">
-                                    <button class="btn  mx-auto bag text-white" type="submit">inscription</button>
-                                </div>
                             </div>
-                        </nav>
-                    </div>
-                </nav>
-            </div>
-        </header>
-        <div class="container-fluid bag">
-            <div class="container ">
-                <h2 class="orange mt-3 text-center">Nos événements</h2>
-                <div class="row mt-5 d-flex justify-content-evenly my-3">
-                    <div class="col-12 col-md-4 text-white">
-                        <p class="fw-bold">Online training</p>
-                        <h1 class="orange fw-bold">25K+ ACTEURS TRUST US</h1>
-                        <span class="fs-6">la personnalité invitée parlera de son parcours de vie, de ses expériences
-                            artistiques</span>
-                        <div class="row my-3 ">
-                            <div class="col-8 col-md-6">
-                                <button type="button" class="btn w-100 monCouleur text-white fw-semibold">Get Quote
-                                    Now</button>
+                            <div class="collapse  navbar-collapse  " id="navbarText">
+                                <button class="btn  mx-auto bag text-white" type="submit">inscription</button>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-5">
-                        <img src="image/Rectangle 23.svg" class="img-fluid monImage" alt="...">
-                    </div>
+                    </nav>
                 </div>
-            </div>
+            </nav>
         </div>
-        <div class="container">
-            <div class="row Couleur text-center vert fw-bold mt-3">
-                <h1>événement à venir</h1>
-            </div>
-            <div class="container mt-5">
-                <div class="row  d-flex justify-content-around ">
-                    <div class="col-12  col-sm-5 ">
-                        <!-- <img src="image/Rectangle 6.svg" class="img-thumbnail" alt="..."> -->
-                        <video src="image/3205624-hd_1280_720_25fps.mp4" class="monImage2" muted autoplay
-                            controls></video>
-                    </div>
-                    <div class="col-12  col-sm-5 ">
-                        <h1 class="orange mt-5">Article title</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing...Lorem ipsum dolor sit amet, consectetur
-                            adipiscing...
-                        </p>
-                        <button class="btn  mx-auto bag text-white" type="submit">inscription</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid mt-5">
-            <div class="row">
-                <div class="col-12 col-md-3">
-                    <div class="row">
-                        <img src="image/Rectangle 21.svg" class="card-img-top monImage" alt="...">
-                    </div>
-                    <h5 class="orange  mt-3">Article title</h5>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing... <br></span>
-                    <button type="button" class="btn btn-link orange">S’inscrire</button>
-                </div>
-                <div class="col-12 col-md-3">
-                    <div class="row">
-                        <img src="image/Rectangle 21.svg" class="card-img-top monImage" alt="...">
-                    </div>
-                    <h5 class="orange  mt-3">Article title</h5>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing... <br></span>
-                    <button type="button" class="btn btn-link orange">S’inscrire</button>
-                </div>
-                <div class="d-none d-md-block col-md-3">
-                    <div class="row">
-                        <img src="image/Rectangle 21.svg" class="card-img-top monImage" alt="...">
-                    </div>
-                    <h5 class="orange  mt-3">Article title</h5>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing... <br></span>
-                    <button type="button" class="btn btn-link orange">S’inscrire</button>
-                </div>
-                <div class="d-none d-md-block col-md-3">
-                    <div class="row">
-                        <img src="image/Rectangle 21.svg" class="card-img-top monImage" alt="...">
-                    </div>
-                    <h5 class="orange  mt-3">Article title</h5>
-                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing... <br></span>
-                    <button type="button" class="btn btn-link orange">S’inscrire</button>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid monCouleur">
-            <h1 class="text-center text-white mt-4">Archives</h1>
-            <div class="container my-5">
-                <div class="row bag mt-4 box rounded">
-                    <div class="col-12 col-md-3 d-flex align-items-center">
-                        <img src="image/Rectangle 13.svg" class="img-fluid hauteur " alt="">
-                    </div>
-                    <div class="col-12 col-md-6  text-white">
-                        <h3 class="mt-4">Article title</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing... <span class="d-none d-md-block">Lorem
-                                ipsum dolor sit amet, consectetur adipiscing...</span>
-                        </p>
-                        <button type="button" class="btn btn-link orange">S’inscrire</button>
-
-                    </div>
-                </div>
-                <div class="row bag mt-4 box rounded">
-                    <div class="col-12 col-md-3 d-flex align-items-center">
-                        <img src="image/Rectangle 13.svg" class="img-fluid hauteur " alt="">
-                    </div>
-                    <div class="col-12 col-md-6  text-white">
-                        <h3 class="mt-4">Article title</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing... <span class="d-none d-md-block">Lorem
-                                ipsum dolor sit amet, consectetur adipiscing...</span>
-                        </p>
-                        <button type="button" class="btn btn-link orange">S’inscrire</button>
-
-                    </div>
-                </div>
-                <div class="row bag mt-4 box rounded">
-                    <div class="col-12 col-md-3 d-flex align-items-center">
-                        <img src="image/Rectangle 13.svg" class="img-fluid hauteur " alt="">
-                    </div>
-                    <div class="col-12 col-md-6  text-white">
-                        <h3 class="mt-4">Article title</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing... <span class="d-none d-md-block">Lorem
-                                ipsum dolor sit amet, consectetur adipiscing...</span>
-                        </p>
-                        <button type="button" class="btn btn-link orange">S’inscrire</button>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
+    </header>
+   </div>
+    <div class="container-fluid">
+    
     </div>
-    <footer class="">
-        <div class="container-fluid  ">
-            <div class="container-flud bag">
-                <div class="container d-none d-md-block">
-                    <div class="row ">
-                        <div class="col mt-4">
-                            <p class="text-white fw-bold">Company Info</p>
-                            <a href="" class="text-white text-decoration-none">About Us <br></a>
-                            <a href="" class="text-white text-decoration-none">Carrier <br></a>
-                            <a href="" class="text-white text-decoration-none">We are hiring <br></a>
-                            <a href="" class="text-white text-decoration-none">blog</a>
-                        </div>
-                        <div class="col mt-4">
-                            <p class="text-white fw-bold">Company Info</p>
-                            <a href="" class="text-white text-decoration-none">About Us <br></a>
-                            <a href="" class="text-white text-decoration-none">Carrier <br></a>
-                            <a href="" class="text-white text-decoration-none">We are hiring <br></a>
-                            <a href="" class="text-white text-decoration-none">blog</a>
-                        </div>
-                        <div class="col mt-4">
-                            <p class="text-white fw-bold">Company Info</p>
-                            <a href="" class="text-white text-decoration-none">About Us <br></a>
-                            <a href="" class="text-white text-decoration-none">Carrier <br></a>
-                            <a href="" class="text-white text-decoration-none">We are hiring <br></a>
-                            <a href="" class="text-white text-decoration-none">blog</a>
-                        </div>
-                        <div class="col mt-4">
-                            <p class="text-white fw-bold">Company Info</p>
-                            <a href="" class="text-white text-decoration-none">About Us <br></a>
-                            <a href="" class="text-white text-decoration-none">Carrier <br></a>
-                            <a href="" class="text-white text-decoration-none">We are hiring <br></a>
-                            <a href="" class="text-white text-decoration-none">blog</a>
-                        </div>
-                        <div class="col mt-4">
-                            <p class="text-white fw-bold">Get In Touch</p>
-                            <a href="" class="text-white text-decoration-none"><i class="ri-phone-fill"></i> (480)
-                                555-0103<br></a>
-                            <a href="" class="text-white text-decoration-none"><i class="ri-map-pin-line"></i> 4517
-                                 <br></a>
-                            <a href="" class="text-white text-decoration-none"><i class="ri-mail-send-line"></i>
-                                debra.@example.com<br></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="container-fluid ">
+      <div class="row h-100">
+        <img src="image/Group 36.svg" alt="" class="monImage">
+      </div>
+    </div>
+    <div class="container-fluid">
+      <h1 class="text-center mt-4 fw-bold orange">Vitrine Culture</h1>
+      <div class="container-fluid mt-2">
+        <div class="row text-center">
+          <span>Vitrine culture" est une série de rencontres mensuelles entre
+             des personnalités de la culture et le grand public, organisée à 
+             Saint-Louis par l'association E'leuk. Ces rencontres se tiennent
+              tous les derniers samedis de chaque mois à partir de février 2023 
+              et comprennent des discussions, des échanges, des performances artistiques, 
+              et une diffusion en direct sur les réseaux sociaux.</span>
         </div>
-        <div class="row bg-white text-black">
-            <div class="container-flud">
-                <div class="container  d-flex justify-content-between">
-                    <div class="col-5 d-none d-md-block">
-                       <p class="mt-3"> Made With Love By Figmaland All Right Reserved </p>
+        <div class="row d-flex justify-content-center mt-3">
+          <div class="col-8 col-md-2 "> <button class="bg-orange monButton text-white">En savoir plus</button></div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt-4">
+      <div class="row h-100">
+        <div class="col-12 ">
+          <video src="image/3205624-hd_1280_720_25fps.mp4" class="object-fit-cover h-100 w-100" controls></video>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container-fluid">
+      <h1 class="text-center mt-4 fw-bold orange">événemet à venir</h1>
+      <div class="row d-flex justify-content-center mt-4">
+        <div class="col-12 col-md-3">
+          <div class="row">
+            <img src="image/Rectangle 7.svg" class="card-img-top monImage" alt="...">
+          </div>
+          <h5 class="orange  mt-3">Article title</h5>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing... <br></span>
+          <button type="button" class="btn btn-link orange">Read more</button>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="row">
+            <img src="image/Rectangle 8.svg" class="card-img-top monImage" alt="...">
+          </div>
+          <h5 class="orange  mt-3">Article title</h5>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing... <br></span>
+          <button type="button" class="btn btn-link orange">Read more</button>
+        </div>
+        <div class="d-none d-md-block col-md-3">
+          <div class="row">
+            <img src="image/Rectangle 7.svg" class="card-img-top monImage" alt="...">
+          </div>
+          <h5 class="orange  mt-3">Article title</h5>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing... <br></span>
+          <button type="button" class="btn btn-link orange">Read more</button>
+        </div>
+        <div class="d-none d-md-block col-md-3">
+          <div class="row">
+            <img src="image/Rectangle 7.svg" class="card-img-top monImage" alt="...">
+          </div>
+          <h5 class="orange  mt-3">Article title</h5>
+          <span>Lorem ipsum dolor sit amet, consectetur adipiscing... <br></span>
+          <button type="button" class="btn btn-link orange">Read more</button>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row mt-3 d-flex justify-content-between">
+        <div class="col-11 col-md-5">
+          <a href=""><button type="button" class="btn btn-link orange fs-5">voir tous les Événements</button></a>
+        </div>
+        <div class="col-1">
+          <h1><i class="ri-arrow-right-line orange"></i></h1>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bag">
+      
+      <div class="container-fluid mt-5">
+        <h2 class="text-center orange mt-5 fw-semibold">Inscrivez-vous à notre newsletter</h2>
+        <div class="container d-flex justify-content-center mb-3">
+          <div class="row text-center d-flex justify-content-center">
+            <div class="col-11 text-white">
+              <span class="d-none d-md-block">Abonnez-vous à la newsletter et soyez au courant des nouveautés, recevez
+                des conseils et
+                des offres !</span>
+            </div>
+            <div class="col-8 mt-4">
+              <div class="row mb-3">
+                <div class="col-12 col-md-9 mb-3"> <input type="email" class="form-control "
+                    placeholder="Your e-mail..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                </div>
+                <div class="col-3 ">
+                  <button type="button" class="btn  bg-orange text-white fw-semibold">S'abboner
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="bg-white">
+    </div>
+
+  </div>
+  <footer class="">
+    <div class="container-fluid  ">
+        <div class="container-flud bag">
+            <div class="container d-none d-md-block">
+                <div class="row ">
+                    <div class="col mt-4">
+                        <p class="text-white fw-bold">Company Info</p>
+                        <a href="" class="text-white text-decoration-none">About Us <br></a>
+                        <a href="" class="text-white text-decoration-none">Carrier <br></a>
+                        <a href="" class="text-white text-decoration-none">We are hiring <br></a>
+                        <a href="" class="text-white text-decoration-none">blog</a>
                     </div>
-                    <div class="col-3 d-flex justify-content-end fs-2 align-items-center">
-                        <i class="ri-facebook-circle-fill mx-2 vert"></i>
-                        <i class="ri-instagram-line mx-2 vert"></i>
-                        <i class="ri-twitter-fill vert"></i>
+                    <div class="col mt-4">
+                        <p class="text-white fw-bold">Company Info</p>
+                        <a href="" class="text-white text-decoration-none">About Us <br></a>
+                        <a href="" class="text-white text-decoration-none">Carrier <br></a>
+                        <a href="" class="text-white text-decoration-none">We are hiring <br></a>
+                        <a href="" class="text-white text-decoration-none">blog</a>
+                    </div>
+                    <div class="col mt-4">
+                        <p class="text-white fw-bold">Company Info</p>
+                        <a href="" class="text-white text-decoration-none">About Us <br></a>
+                        <a href="" class="text-white text-decoration-none">Carrier <br></a>
+                        <a href="" class="text-white text-decoration-none">We are hiring <br></a>
+                        <a href="" class="text-white text-decoration-none">blog</a>
+                    </div>
+                    <div class="col my-4 ">
+                        <p class="text-white fw-bold">Company Info</p>
+                        <a href="" class="text-white text-decoration-none">About Us <br></a>
+                        <a href="" class="text-white text-decoration-none">Carrier <br></a>
+                        <a href="" class="text-white text-decoration-none">We are hiring <br></a>
+                        <a href="" class="text-white text-decoration-none">blog</a>
+                    </div>
+                    <div class="col mt-4">
+                        <p class="text-white fw-bold">Get In Touch</p>
+                        <a href="" class="text-white text-decoration-none"><i class="ri-phone-fill"></i> (480)
+                            555-0103<br></a>
+                        <a href="" class="text-white text-decoration-none"><i class="ri-map-pin-line"></i> 4517
+                             <br></a>
+                        <a href="" class="text-white text-decoration-none"><i class="ri-mail-send-line"></i>
+                            debra.@example.com<br></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <div class="row bg-white text-black">
+        <div class="container-flud">
+            <div class="container  d-flex justify-content-between">
+                <div class="col-5 d-none d-md-block">
+                   <p class="mt-3"> Made With Love By Figmaland All Right Reserved </p>
+                </div>
+                <div class="col-3 d-flex justify-content-end fs-2 align-items-center">
+                    <i class="ri-facebook-circle-fill mx-2 vert"></i>
+                    <i class="ri-instagram-line mx-2 vert"></i>
+                    <i class="ri-twitter-fill vert"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
